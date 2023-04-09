@@ -1,4 +1,4 @@
 module Eq where
 
-data _≡_{A : Set}: ∀(a₁ a₂ : A) → Set where
-    refl : ∀{a : A} → a ≡ a
+data _≡_{A : Set}(a : A): A → Set where
+    refl : a ≡ a
